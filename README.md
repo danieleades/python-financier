@@ -16,7 +16,7 @@ USAGE
 ----------------
 
 ```js
-from pythonfinancier.financier import Financier
+from pythonfinancier import Financier
 
 f = Financier('https://app.financier.io/db/', EMAIL, PASSWORD)
 
