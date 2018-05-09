@@ -1,10 +1,10 @@
 ---------
 Python Module for managing [financier](https://financier.io/)
 
-DISCLAIMER: not a official API from financier
+DISCLAIMER: not an official API from financier
 ============
 
-That module allows you insert transactions and payee on financier.
+This module allows you insert transactions and payees on financier.
 
 Install
 ------------------
@@ -27,15 +27,15 @@ f.save_transaction('nubank', '1031b19e-a165-4aea-afd1-gggg4b2a00000', 400, '2017
 ```
 
 Notes: 
-- If payee doesn't exists, it will create a new one.
-- That script will use the suggest_category on payee, so will automatically import transactions using the previously category set for thath payee
+- If payee doesn't exist, it will create it.
+- The script will use the suggest_category on payee, so will automatically import transactions using the previously category set for that payee
 
 FINDING ALL BUDGETS AVAILABLE
 ----------------
 
 
 ```js
-from pythonfinancier.financier import Financier
+from pythonfinancier import Financier
 
 f = Financier('https://app.financier.io/db/', EMAIL, PASSWORD)
 
